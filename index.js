@@ -35,5 +35,5 @@ app.get("/", (req, res)=>{
   res.send(message)
 })
 
-app.use("/notes", notesRouter)
-app.use("/user", userRouter)
+app.use("/notes", notesRouter);
+app.use("/user", userRouter);
