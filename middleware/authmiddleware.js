@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 
 const checkLoggedIn = (req, res, next) => {
 
-  let token = req.header('Authorization');
+  let token = req.header('Authorization')
   token = token.split(" ")[1]
 
   if (!token) {
